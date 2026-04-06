@@ -6,7 +6,6 @@ public static void main(String[]args){
     System.out.println("Digite sua frase:");
     frase = ler.nextLine();
     char[] cifrador = new char[frase.length()];
-    String[] letras = {"A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"};
     
     for(int i = 0; i < frase.length(); i++){
         char letra = frase.toUpperCase().charAt(i);
@@ -16,9 +15,9 @@ public static void main(String[]args){
     }
 
     System.out.print(cifrador);
-    // for(i; i < frase.length(); i++){
-    //     i = (i + 5)%{frase.length()};
-        
+    // for(i; i < cifrador.length(); i++){
+    //     i = (i + 5)%frase.length();
+    //     System.out.print(i);
     // }
 }
 }
