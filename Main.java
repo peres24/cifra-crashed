@@ -6,30 +6,27 @@ public static void main(String[]args){
     System.out.println("Digite sua frase:");
     frase = ler.nextLine();
     char[] cifrador = new char[frase.length()];
-    char[] pontos = {'.', ';', ':', '>', '<', '"', '!', '@' '#', '$', '%', '¨' , '&', '*', '(', ')', '´', '`', '-', '_', '=', '+', '§', '[', ']', '^', '~', 'º', '{', '}', '?', '/', '°'}
+    char[] pontos = {'.', ';', ':', '>', '<', '"', '!', '@', '#', '$', '%', '¨' , '&', '*', '(', ')', '´', '`', '-', '_', '=', '+', '§', '[', ']', '^', '~', 'º', '{', '}', '?', '/', '°'};
     
-     for(int i = 0; i < frase.length(); i++){
+    //  for(int i = 0; i < frase.length(); i++){
+    //     char letra = frase.toUpperCase().charAt(i);
+    //     if(letra != ' ' && letra != '.'){
+    //         cifrador[i] = letra;
+    //     }
+    //     else{
+    //         continue;
+    //     }
+        for(int i = 0; i < frase.length(); i++){
         char letra = frase.toUpperCase().charAt(i);
-        if(letra != ' ' && letra != '.'){
-            cifrador[i] = letra;
+        for(int j = 0; j < pontos.length; j++){
+            if(letra != pontos[j]){
+                cifrador[i] = letra;
         }
         else{
             continue;
         }
-    //     for(int i = 0; i < frase.length(); i++){
-    //     char letra = frase.toUpperCase().charAt(i);
-    //     for(i = 0; i < frase.length(); i++){
-    //         ponto = pontos[i];
-    //         if(letra == ponto){
-    //         continue;
-    //     }
-    //     else{
-    //         cifrador[i] = letra;
-    //     }
-    //     }
-    //     System.out.print(cifrador[i]);
-    // }
-        System.out.println(cifrador[i]);
+        }
+        }
+        System.out.print(cifrador);
     }
-}
 }
