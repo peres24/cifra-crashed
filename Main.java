@@ -18,14 +18,15 @@ public static void main(String[]args){
     //     }
         for(int i = 0; i < frase.length(); i++){
         char letra = frase.toUpperCase().charAt(i);
-        for(int j = 0; j < pontos.length; j++){
-            if(letra != pontos[j]){
-                cifrador[i] = letra;
-        }
-        else{
-            continue;
-        }
-        }
+        char arrumado = String.valueOf(letra).replace("Á", "A").replace("É", "E").replace("Í", "I").replace("Ç", "C").replace("Ó", "O").replace("Ú", "U").charAt(0);
+        // for(int j = 0; j < pontos.length; j++){
+        //     if(letra != pontos[j]){
+                cifrador[i] = arrumado;
+        // }
+        // else{
+        //     continue;
+        // }
+        // }
         }
         System.out.print(cifrador);
     }
