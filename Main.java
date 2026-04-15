@@ -9,7 +9,7 @@ public static void main(String[]args){
     
      for(int i = 0; i < frase.length(); i++){
      char letra = frase.toUpperCase().charAt(i);
-char arrumado = String.valueOf(letra).replace("Á", "A").replace("É", "E").replace("Í", "I").replace("Ç", "C").replace("Ó", "O").replace("Ú", "U").replace(".", " ").replace(",", " ").replace(";", " ").replace(",", " ").replace(":", " ").replace(",", " ").replace(">", " ").replace(",", " ").replace("<", " ").replace(",", " ").replace("/", " ").replace(",", " ").replace("!", " ").replace(",", " ").replace("@", " ").replace(",", " ").replace("#", " ").replace(",", " ").replace("$", " ").replace(",", " ").replace("%", " ").replace(",", " ").replace("¨", " ").replace(" ", " ").replace("&", " ").replace(",", " ").replace("*", " ").replace(",", " ").replace("(", " ").replace(",", " ").replace(")", " ").replace(",", " ").replace("´", " ").replace(",", " ").replace("`", " ").replace(",", " ").replace("-", " ").replace(",", " ").replace("_", " ").replace(",", " ").replace("=", " ").replace(",", " ").replace("+", " ").replace(",", " ").replace("§", " ").replace(",", " ").replace("[", " ").replace(",", " ").replace("]", " ").replace(",", " ").replace("^", " ").replace(",", " "). replace("~", " ").replace(",", " ").replace("º", " ").replace(",", " ").replace("{", " ").replace(",", " ").replace("}", " ").replace(",", " ").replace("?", " ").replace(",", " ").replace("/", " ").replace(",", " ").replace("°", " ").replace("}", " ").charAt(0);
+     char arrumado = String.valueOf(letra).replace("Á", "A").replace("Â", "A").replace("Ã", "A").replace("Ê", "E").replace("Õ", "O").replace("É", "E").replace("Í", "I").replace("Î", "I").replace("Û", "U").replace("Ç", "C").replace("Ó", "O").replace("Ú", "U").replace(".", " ").replace(",", " ").replace(";", " ").replace(",", " ").replace(":", " ").replace(",", " ").replace(">", " ").replace(",", " ").replace("<", " ").replace(",", " ").replace("/", " ").replace(",", " ").replace("!", " ").replace(",", " ").replace("@", " ").replace(",", " ").replace("#", " ").replace(",", " ").replace("$", " ").replace(",", " ").replace("%", " ").replace(",", " ").replace("¨", " ").replace(" ", " ").replace("&", " ").replace(",", " ").replace("*", " ").replace(",", " ").replace("(", " ").replace(",", " ").replace(")", " ").replace(",", " ").replace("´", " ").replace(",", " ").replace("`", " ").replace(",", " ").replace("-", " ").replace(",", " ").replace("_", " ").replace(",", " ").replace("=", " ").replace(",", " ").replace("+", " ").replace(",", " ").replace("§", " ").replace(",", " ").replace("[", " ").replace(",", " ").replace("]", " ").replace(",", " ").replace("^", " ").replace(",", " "). replace("~", " ").replace(",", " ").replace("º", " ").replace(",", " ").replace("{", " ").replace(",", " ").replace("}", " ").replace(",", " ").replace("?", " ").replace(",", " ").replace("/", " ").replace(",", " ").replace("°", " ").replace("}", " ").charAt(0);
         letra = arrumado;
         if(letra != ' '){
             cifrador[i] = arrumado;
@@ -17,8 +17,12 @@ char arrumado = String.valueOf(letra).replace("Á", "A").replace("É", "E").repl
         else{
             continue;
         }
-
-        System.out.print(cifrador[i]);
+        // System.out.print(cifrador[i]);
     }
+
+    for(int j = 0; j < cifrador.length; j+=5){
+        System.out.print(cifrador[j]);
+    }
+
 }
 }
